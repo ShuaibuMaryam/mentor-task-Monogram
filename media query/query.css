@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+@media (max-width: 800px) {
+    .navLinks{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        right: 0;
+        
+    }
+    #shoppingBag{
+        display: block;
+    }
+}

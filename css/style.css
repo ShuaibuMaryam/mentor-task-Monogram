@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+}
+header{
+    height: 70vh;
+}
+nav{
+    background-color: #1a2456;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid;
+    padding: .7rem .5rem;
+    margin: 1rem;
+}
+.logo a{
+    text-decoration: none;
+    color: #ff8b68;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo a:hover{
+    color: #ff501c;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+.navLinks li a{
+    text-decoration: none;
+    color: #ff8b68;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+.navLinks li a:hover{
+    color: #ff501c;
+}
+.navLinks .dropdown .dropdownBtn{
+    font-size: 12px;
+    color: #ff8b68;
+    background-color: none;
+}
+.dropdownContent{
+    display: none;
+}
+#shop{
+    font-weight: bold;
+}
+.navLinks li a i{
+    font-size: 1.7rem;
+}
+.hamburger{
+    display: none;
+}
+.hamburger div{
+    width: 25px;
+    height: 1px;
+    background-color: #ff8b68;
+    margin: 5px;
+}
+
+
+/*-----Banner text-----*/
+
+.banner h1{
+    font-size: 3rem;
+}
