@@ -9,6 +9,8 @@ body{
     font-family: 'Prompt', sans-serif;
 }
 header{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
     height: 70vh;
 }
 nav{
@@ -37,7 +39,7 @@ nav{
 }
 .navLinks li a{
     text-decoration: none;
-    color: #ff8b68;
+    color: #E28F74;
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -45,14 +47,6 @@ nav{
 }
 .navLinks li a:hover{
     color: #ff501c;
-}
-.navLinks .dropdown .dropdownBtn{
-    font-size: 12px;
-    color: #ff8b68;
-    background-color: none;
-}
-.dropdownContent{
-    display: none;
 }
 #shop{
     font-weight: bold;
@@ -69,10 +63,36 @@ nav{
     background-color: #ff8b68;
     margin: 5px;
 }
-
+#shoppingBag{
+    display: none;
+}
 
 /*-----Banner text-----*/
+.banner{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 16rem;
 
+}
 .banner h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: .8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.banner p{
+    font-size: 1.09rem;
+}
+
+
+/*------Scroller-----*/
+.scroller{
+    display: flex;
+    justify-content: center;
+}
+.scroller a > i{
+    font-size: 8rem;
 }

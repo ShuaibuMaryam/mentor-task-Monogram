@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
 @media (max-width: 800px) {
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .navLinks{
         display: none;
+    }
+    .responsiveMenu{
+        display: flex;
+        align-items: center;
     }
     .hamburger{
         display: block;
@@ -12,5 +21,10 @@
     }
     #shoppingBag{
         display: block;
+        margin: 0 .8rem;
+    }
+    #shoppingBag a > i{
+        font-size: 1.7rem;
+        color: #ff8b68;
     }
 }
