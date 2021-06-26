@@ -8,22 +8,26 @@
 body{
     font-family: 'Prompt', sans-serif;
 }
-header{
-    background-image: url('../images/banner.jpg');
+.header{
+    background-image: url('https://monogramcc.com/static/477ea039ed65c2cc13a3e4762ce5f352/a92e9/shop-cta-xl.jpg');
     background-size: cover;
-    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 350px;
+    padding-top: 1rem;
+    height: 96.5vh;
 }
-nav{
+.nav{
     background-color: #1a2456;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid;
     padding: .7rem .5rem;
-    margin: 1rem;
+    margin: 0 1rem ;
+    position: sticky;
 }
 .logo a{
     text-decoration: none;
-    color: #ff8b68;
+    color: #e5aa97;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -39,7 +43,7 @@ nav{
 }
 .navLinks li a{
     text-decoration: none;
-    color: #E28F74;
+    color: #e5aa97;
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -74,17 +78,19 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 16rem;
-
+    padding-right: 13rem;
 }
 .banner h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: .8rem;
+    margin-top: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
+    color: #1a2456;
 }
 .banner p{
-    font-size: 1.09rem;
+    font-size: 1.2rem;
+    color: #1a2456;
 }
 
 
@@ -92,7 +98,164 @@ nav{
 .scroller{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 .scroller a > i{
-    font-size: 8rem;
+    font-size: 5rem;
+    color: white;
 }
+
+
+/*-----Section 2-----*/
+.sectionTwo{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.typeOfConsoleWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.typeOfConsole{
+    width: 50%;
+    margin: 1.2rem;
+}
+.typeOfConsoleWrapper .typeOfConsole img{
+    width: 100%;
+}
+.typeOfConsoleWrapper2{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.typeOfConsole1{
+    margin: 1.2rem;
+    width: 100%;
+    height: 60vh;
+}
+.typeOfConsoleWrapper2 .typeOfConsole1 img{
+    width: 100%;
+    height: inherit !important;
+}
+.consoleText{
+    display: flex;
+    justify-content: space-between;
+}
+.consoleText a, .consoleFooter a{
+    text-decoration: none;
+    color: #1a2456;
+    font-size: .85rem;
+}
+.consoleText a h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/*-----Section 3-----*/
+.sectionThree{
+    background-image: url('../images/shop-banner-module.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    margin-top: 4rem;
+}
+.createConsole{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 3rem;
+}
+.sectionThree .createConsole h1{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: #1a2456;
+}
+.sectionThree .createConsole p{
+    font-size: 1.2rem;
+    color: #1a2456;
+}
+
+/*-----Section 4-----*/
+.sectionFour{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.6rem;
+    padding: 1.5rem 6rem;
+}
+.typeOfConsole-2{
+    height: 13rem;
+    margin-top: 2rem;
+}
+.sectionFour .typeOfConsole-2 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*-----Footer----*/
+footer{
+    background-color: #1a2456;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: 2rem;
+    margin-top: 6rem;
+    padding: 3rem 4rem 10rem 4rem;
+} 
+.footerSection ul li{
+    list-style: none;
+}
+.footerSection ul li a{
+    text-decoration: none;
+    color: #e5aa97;
+    font-size:.9rem;
+}
+.footerSection h5{
+    font-size: .7rem;
+    color: #e5aa97;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.footerSection p{
+    color: #e5aa97;
+    font-size: .9rem;
+}
+.footerSection span{
+    color: #e5aa97;
+    font-size: .6rem;
+}
+.footerSection .form{
+    margin: .5rem 0 1rem 0;
+}
+.footerSection .form input{
+    padding: .35rem;
+    width: 70%;
+    background: transparent;
+    border: 1px solid #e5aa97;
+}
+.footerSection .form input ::placeholder{
+    color: #f0efed;
+    font-size: 1rem;
+}
+.footerSection .form button{
+    padding: .5rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: gray;
+    font-size: .7rem;
+    font-weight: bold;
+}
+.footerSection .socialIcons {
+    margin: 2.5rem 0 1rem 0;
+}
+footer .footerSection .socialIcons a > i{
+    font-size: 1.2rem;
+    color: #f0efed;
+    margin-right: .5rem;
+}
+footer .footerSection .socialIcons span  a{
+    color: #ff8b68;
+} 
