@@ -44,15 +44,24 @@
 }
 
 @media (max-width: 600px){
+    .header{
+        padding-top: .5rem;
+        padding-bottom: 3rem;
+    }
+    .nav{
+        margin: 0 .5rem;
+    }
     .banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-left: 1.2rem;
+    margin-left: 3rem;
+    padding-right: 5rem;
     }
     .banner h1{
-        font-size: 2.5rem;
+        margin-top: 6rem;
+        font-size: 3rem;
+
+    }
+    .banner p{
+        font-size: 1.45rem;
     }
     .scroller{
         display: flex;
@@ -61,4 +70,60 @@
         margin-bottom: 2rem;
     }
 
+
+    .sectionTwo{
+        display: flex;
+        ;
+        
+    }
+    .typeOfConsoleWrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .typeOfConsole{
+        width: 100%;
+    }
+
+
+    .sectionThree{
+        height: 60vh;
+    }
+    .createConsole{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .sectionFour{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        padding: 1.5rem 2rem;
+    }
+
+
+
+    .typeOfConsole-2{
+       width: 100%;
+    }
+
+
+
+    footer{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .footerSection ul li a:hover{
+        text-decoration: underline;
+    }
+    footer .footerSection:nth-child(5){
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+    .footerSection h5{
+        margin-bottom: 1rem;
+    }
 }
